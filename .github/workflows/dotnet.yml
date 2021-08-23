@@ -1,0 +1,32 @@
+name: .NET
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+  pull_request:
+    branches:
+      - master
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - name: Restore dependencies Api
+        run: dotnet restore src/Api/Api.Interview.Application/
+      - name: Restore dependencies Projeto
+        run: dotnet restore src/Interview.Application/Interview/
+      - name: Build Api
+        run: dotnet build src/Api/Api.Interview.Application/
+      - name: Build Projeto
+        run: dotnet build src/Interview.Application/Interview/
+      - name: Teste Unitario Api
+        run: dotnet test src/Test/Unitary/Interview.Unitary.Test/
