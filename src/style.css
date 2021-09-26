@@ -12,3 +12,19 @@ h1{
 .noticias{
   font-family: arial;
 }
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.cabecalho{
+  background: green;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.conteudo{
+  padding: 20px;
+}
