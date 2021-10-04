@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <title>DIW - PUC MINAS</title>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Trabalho Prático - Desenvolvimento Site Pessoal</title>
 </head>
 <body>  
   <header>
@@ -14,14 +19,24 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="src">Site Pessoal</a>
+              <a class="nav-link" aria-current="page" href="#">Perfil</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="src_tacos/">Tacos</a>
-            </li>            
+              <a class="nav-link" aria-current="page" href="#">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Experiência</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Repositório Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Conteúdo</a>
+            </li>
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Pesquisa" aria-label="Pesquisa">
@@ -33,20 +48,339 @@
 
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        
+        <div class="row conf_area" id="rd_perfil">
+          <div class="row bg-light">
+            <div class="g-0 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <img src="https://avatars.githubusercontent.com/u/33984189?v=4" class="w-100 img-fluid rounded-start" alt="Hudson Carlos">
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+              <h5 class="mt-0">Hi there, I'm Hudson Carlos 👋</h5>
+              
+              <ul>
+                <li>🔭 I’m currently working with .Net.</li>
+                <li>🌱 I’m currently learning Software Architecture, Kubernetes, Grafana, Docker, Azure DevOps.</li>
+                <li>🤔 I'm in need of help with Design Patterns, Observability and Speaking English.</li>
+              </ul>
+
+              <div>
+                <a href="https://github.com/HudsonCarlos">
+                <img height="180em" src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=HudsonCarlos&show_icons=true&theme=dark&include_all_commits=true&count_private=true"/>
+                <img height="180em" src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=HudsonCarlos&layout=compact&langs_count=7&theme=dark"/>   
+              </div>
+              
+              <div>
+                <code><img align="center" alt="Hudson-Csharp" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"></code>
+                <code><img align="center" alt="Hudson-Js" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"></code>
+                <code><img align="center" alt="Hudson-HTML" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"></code>
+                <code><img align="center" alt="Hudson-CSS" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"></code>
+                <code><img align="center" alt="Hudson-PHP" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"></code>
+                <code><img align="center" height="20" alt="Hudson-TypeScript" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
+                <code><img align="center" alt="Hudson-React" height="20" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"></code>
+              </div>
+              
+              <br>
+
+              <div>  
+                <a href = "mailto:hudsonscarlos@outlook.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/hudson-carlos-11b9a282" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+              </div>
+              
+              <a href="#" class="stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row conf_area" id="rd_projetos">        
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h3 class="mt-0">Projetos</h3>
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-8 col-xl-3">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categorías: TODOS
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Web Sites</a>
+                  <a class="dropdown-item" href="#">Arte Gráfica</a>
+                  <a class="dropdown-item" href="#">Podcast</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <br>
+          
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-React-Project-Estudo-Vercel" target="_blank" class="stretched-link">
+                  <img src="https://opengraph.githubassets.com/e858998dd429df8b070bee1c3ce4e353468c193d7a2ae4b1beff1676f38be09e/HudsonCarlos/DevGordinho-React-Project-Estudo-Vercel" class="card-img-top" alt="DevGordinho-React-Project-Estudo-Vercel">
+                  <div class="card-body">
+                    <p class="card-text">Este diretório é um breve exemplo de um aplicativo React com funções sem servidor que pode ser implantado com Vercel e configuração zero.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Aprendendo-RabbitMQ" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/bf8fa4c898886be92c480f8a508073cadb441990875a53c922aa16b0f8af9387/HudsonCarlos/DevGordinho-Aprendendo-RabbitMQ" class="card-img-top" alt="DevGordinho-Aprendendo-RabbitMQ">
+                  <div class="card-body">
+                    <p class="card-text">Esse foi utilizado para aplicar os aprendizados sobre RabbitMQ criando um publicador, consumidor e interagindo com a fila.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Curso-Git-GitHub" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/a511c24ff6e2d381f8b6a7b813317b43d8ccca1d07183c1d639d726f259275ab/HudsonCarlos/DevGordinho-Curso-Git-GitHub" class="card-img-top" alt="DevGordinho-Curso-Git-GitHub">
+                  <div class="card-body">
+                    <p class="card-text">Projeto criado para aplicar aprendizado sobre Git e Github para iniciantes, de um curso da Udemy.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Blog" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/ab0134711bcf159923ec4de4dcbb7741080b800f278ead73d003a7a0ca1811e8/HudsonCarlos/DevGordinho-Blog" class="card-img-top" alt="DevGordinho-Blog">
+                  <div class="card-body">
+                    <p class="card-text">Projeto criado para seguindo um tutorial de criação de um blog simples em 20 minutos com React e Next.js.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Enviador-Email-SOLID" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/ea787e518c7423a95edf66ab0c7bc999e7e609aaaa7ff2a562ab46ea0d42e476/HudsonCarlos/DevGordinho-Enviador-Email-SOLID" class="card-img-top" alt="DevGordinho-Enviador-Email-SOLID">
+                  <div class="card-body">
+                    <p class="card-text">Este projeto tem por iniciativa aplicar os princípios do SOLID em uma aplicação que envia e-mails de varios provedores.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Livro-TDD-Teste-Design-No-Mundo-Real" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/4e1ab9542b87154434666010c97a884a25cf5c48892ea78a23197332d6237fbd/HudsonCarlos/DevGordinho-Livro-TDD-Teste-Design-No-Mundo-Real" class="card-img-top" alt="DevGordinho-Livro-TDD-Teste-Design-No-Mundo-Real">
+                  <div class="card-body">
+                    <p class="card-text">Esse projeto foi criado com base nos estudos de TDD do Livro Test Driven Development Teste e Design no Mundo Real - Casa do Código.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button">+ Carregar mais projetos</button>
+              </div>
+            </div>            
+          </div>
+        </div>  
+        
+        <div class="row conf_area" id="rd_experiencia">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h3 class="mt-0">Experiência</h3>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQEO-a-_WW4fOw/company-logo_200_200/0/1531246553046?e=1641427200&v=beta&t=jaV6ajpAx13aW8HWJVcDlSlHFZEwHsqMH6YKFKRXdsU" class="w-100 img-fluid rounded-start" alt="BRQ Digital Solutions">
+              </div>
+              <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="card-body">
+                  <h5 class="card-title">Analista de Sistemas</h5>
+                  <p class="card-text">Atuo no desenvolvimento e manutenção de aplicações desktop e web, na maioria delas utilizando C#, ASP NET MVC, Razor, WebServices, .NET Core, Web Api, CSS, Bootstrap, JavaScript, Jquery, Ajax, SQL Server, TFS, Git, RabbitMQ.</p>
+                  <p class="card-text"><small class="text-muted">Período: 08/2021 até o momento</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHN_7Xs0LLubA/company-logo_100_100/0/1632310077619?e=1641427200&v=beta&t=MNkbNQoCzDTXTDwJBS2yiSv17l7ohtdmLYCuk59GmoI" class="w-100 img-fluid rounded-start" alt="Mastermaq Software">
+              </div>
+              <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="card-body">
+                  <h5 class="card-title">Analista de Sistemas</h5>
+                  <p class="card-text">Atuo no desenvolvimento e manutenção de aplicações desktop e web, na maioria delas utilizando C#, ASP NET MVC, Razor, WebServices, .NET Core, Web Api, CSS, Bootstrap, JavaScript, Jquery, Ajax, SQL Server, TFS, Git, RabbitMQ.</p>
+                  <p class="card-text"><small class="text-muted">Período: 10/2015 a 08/2021</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E0BAQE9REd-oSJUFQ/company-logo_100_100/0/1614682571588?e=1641427200&v=beta&t=QZir07lz5oF02vxYJlicQ81d1dBAGPyW8KDdPZCOyyE" class="w-100 img-fluid rounded-start" alt="Opem Credit">
+              </div>
+              <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+                <div class="card-body">
+                  <h5 class="card-title">Estágio TI</h5>
+                  <p class="card-text">Atuo no desenvolvimento e manutenção de aplicações desktop e web, na maioria delas utilizando C#, ASP NET MVC, Razor, WebServices, .NET Core, Web Api, CSS, Bootstrap, JavaScript, Jquery, Ajax, SQL Server, TFS, Git, RabbitMQ.</p>
+                  <p class="card-text"><small class="text-muted">Período: 11/2014 a 10/2015</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button">+ Carregar mais Experiência</button>
+              </div>
+            </div>            
+          </div>
+        </div>
+
+        <div class="row conf_area" id="rd_repositorio_github">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h3 class="mt-0">Repositórios GitHub</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-React-Project-Estudo-Vercel" target="_blank" class="stretched-link">
+                  <img src="https://opengraph.githubassets.com/e858998dd429df8b070bee1c3ce4e353468c193d7a2ae4b1beff1676f38be09e/HudsonCarlos/DevGordinho-React-Project-Estudo-Vercel" class="w-100" alt="DevGordinho-React-Project-Estudo-Vercel">
+                  <div class="card-body">
+                    <p class="card-text">Este diretório é um breve exemplo de um aplicativo React com funções sem servidor que pode ser implantado com Vercel e configuração zero.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Aprendendo-RabbitMQ" target="_blank" class="w-100 stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/bf8fa4c898886be92c480f8a508073cadb441990875a53c922aa16b0f8af9387/HudsonCarlos/DevGordinho-Aprendendo-RabbitMQ" class="w-100" alt="DevGordinho-Aprendendo-RabbitMQ">
+                  <div class="card-body">
+                    <p class="card-text">Esse foi utilizado para aplicar os aprendizados sobre RabbitMQ criando um publicador, consumidor e interagindo com a fila.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card">
+                <a href="https://github.com/HudsonCarlos/DevGordinho-Curso-Git-GitHub" target="_blank" class="stretched-link"></a>
+                  <img src="https://opengraph.githubassets.com/a511c24ff6e2d381f8b6a7b813317b43d8ccca1d07183c1d639d726f259275ab/HudsonCarlos/DevGordinho-Curso-Git-GitHub" class="w-100" alt="DevGordinho-Curso-Git-GitHub">
+                  <div class="card-body">
+                    <p class="card-text">Projeto criado para aplicar aprendizado sobre Git e Github para iniciantes, de um curso da Udemy.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button">+ Carregar mais repositório</button>
+              </div>
+            </div>            
+          </div>
+        </div>  
+
 
         </div>
+
+        <div class="row conf_area" id="rd_conteudo">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <h3 class="mt-0">Recomendação de Conteúdo</h3>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Card with stretched link</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Card with stretched link</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+              <div class="card" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="YouTube video" allowfullscreen></iframe>
+                <div class="card-body">
+                  <h5 class="card-title">Card with stretched link</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+            
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary" type="button">+ Carregar mais recomentações</button>
+              </div>
+            </div>            
+          </div>
+
+          
+        </div>
+
       </div>
-    </div>
+    </div>    
   </main>
+
+  <hr>
 
   <footer>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
+          <p>Conpyright 2021 - Hudson S Carlos</p>
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <img src="https://avatars.githubusercontent.com/u/33984189?v=4" class="w-100" alt="Hudson Carlos">
+        </div>
+      </div>
+    </div>
+
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  <hr>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
+
