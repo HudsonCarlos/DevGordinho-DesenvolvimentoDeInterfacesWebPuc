@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Teste</title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function () {
+        $('#login').submit(() => {
+            
+            //Atividade 01
+            // if ($('#nome').val().length == 0){
+            //     alert('Deu ruim')
+            //     return false;
+            // }
+            // else{
+            //     alert('Opaaaaaaaaa')
+            //     return true;
+            // }
+            
+            //Atividade 02
+            $('#nome').val((e) => {
+              //alert(e.document.val())
+              if (e.button.value.length > 0)
+                $('#btn').prop('disabled', false);
+              else
+                $('#btn').prop('disabled', true);
+              });
+            
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form id="login">
+      <input id="nome" type="text" value="" />
+      <button id="btn" type="submit">OK</button>
+    </form>
+    
+    
+  </body>
+</html>
