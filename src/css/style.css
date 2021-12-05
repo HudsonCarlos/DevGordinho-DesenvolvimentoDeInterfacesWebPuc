@@ -1,20 +1,39 @@
-
-.conf_area{
-  margin-top: 30px;
-  /* height: 700px; */
+* {
+  font-family: sans-serif;
+  color: #333;
+  box-sizing: border-box;
 }
 
-#rd_projetos .card a {
-  text-decoration: none;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  padding-left: 1px;
+  padding-right: 1px;
+  max-width: 900px;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  color: #ff6a00;
 }
 
-#rd_projetos .card {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /* height: 100%; */
+#result-pesquisa {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
 }
-
-/* #rd_experiencia .card img {
-  height: 100%;
-  width: 100%;
-} */
+.card-img-top {
+  max-width: 100px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+    
