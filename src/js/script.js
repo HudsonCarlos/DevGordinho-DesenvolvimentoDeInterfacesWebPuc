@@ -8,14 +8,12 @@
     
     async function GetUser(user_Name) {
         const profileresponse = await fetch(
-            `${url}/${user_Name}`
+            url + '/' + user_Name            
         )
     
         const reposresponse = await fetch(
-            `${url}/${user_Name}/repos?per_page=${count}&sort=${sort}`
+            url + '/' + user_Name + '/repos?per_page=' + '&sort='            
         )
-        
-        //console.log(reposresponse)
 
         const result_Pesquisa = await profileresponse.json()
         const repos = await reposresponse.json()
